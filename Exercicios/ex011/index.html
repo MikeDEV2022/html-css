@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Teste para abrir o site em diferentes dispositivos de tamanhos de tela diferentes</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem fixa">
+    </picture>
+    <h1>Elementos de Audio</h1>
+    <p>Aqui serão reproduzidos arquivos de musicas ou audios diversos</p>
+    <audio preload="metadata" controls>
+        <source src="media/dna-repair.mp3" type="audio/mpeg">
+        <p>Caso tenha interesse em baixar esse audio reparador de dna <a href="media/dna-repair.mp3" download="dna-repair.mp3" type="application/mp3">Clique aqui</a></p>
+    </audio>
+
+</body>
+</html>

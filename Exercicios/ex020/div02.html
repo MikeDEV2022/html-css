@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando Com Links</title>
+    <style>
+        a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:active{
+            color: green;
+        }
+        a::after{
+            content: ' ☯';
+        }
+        a::before{
+            content: '☯ ';
+        }
+        .principal .secundaria{
+            display: none;
+        }
+        .principal:hover .secundaria{
+            display: block;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes e Pseudo Elementos</h1>
+    <ul class="principal">
+        <li><a href="https://www.youtube.com/" target="_blank">Link para o youtube</a></li>
+        <ul class="secundaria" type="disc">
+            <li><a href="https://www.youtube.com/">Mais um link</a></li>
+        </ul>
+        <li><a href="https://www.facebook.com/" target="_blank">Link para o facebook</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank">Link para o instagram</a></li>
+    </ul>
+</body>
+</html>

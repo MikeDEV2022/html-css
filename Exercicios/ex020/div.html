@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes e Pseudo Elementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+        .minha-lista{
+            cursor: pointer;
+        }
+        .first > p{
+            display: none;
+        }
+        .first:hover > p{
+            color: red;
+            display: block;
+        }
+        .second:hover{
+            color: red;
+        }
+        .third:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu textos de Pseudo Clase</h1>
+    <h2>Hover</h2>
+    <ul class="minha-lista">
+        <li class="first">Teste 1
+            <p>Minha historia Secreta</p>
+        </li>
+        <li class="second">Teste 2</li>
+        <li class="third">Teste 3</li>
+    </ul>
+</body>
+</html>

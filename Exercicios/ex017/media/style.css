@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif, monospace;
+    font-style: italic;
+    font-size: 1em;
+}
+h1, h2{
+    text-decoration: underline;
+    font-size: 1.9em;
+}
