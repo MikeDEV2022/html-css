@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de background-image</title>
+    <style>
+        body{
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+        .blocos{
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 2px;
+            width: 300px;
+            height: 300px;
+        }
+        .container{
+            padding-left: 15%;
+        }
+        #b1{
+            background-color: aqua;
+        }
+        #b2{
+            background-image: linear-gradient(to right, #392, rgb(21, 124, 3));
+        }
+        #b3{
+            background-image: url('imagens/pattern003.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blocos" id="b1"></div>
+        <div class="blocos" id="b2"></div>
+        <div class="blocos" id="b3"></div>
+    </div>
+</body>
+</html>
