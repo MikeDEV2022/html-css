@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-position</title>
+    <style>
+        .espace{
+            border: 1px solid black;
+            height: 200px;
+            margin: 10px;
+            border-radius: 5px;
+            background-image: url('imagens/wallpaper003.jpg');
+        }
+        #left-top{
+            background-position: top left;
+        }
+        #right-top{
+            background-position: top right;
+        }
+        #left-bottom{
+            background-position: bottom left;
+        }
+        #right-bottom{
+            background-position: bottom right;
+        }
+        #center-center{
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="espace" id="left-top"></div>
+    <div class="espace" id="right-top"></div>
+    <div class="espace" id="left-bottom"></div>
+    <div class="espace" id="right-bottom"></div>
+    <div class="espace" id="center-center"></div>
+</body>
+</html>
