@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela-grande</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            margin: auto;
+            padding-top: 5%;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: gray;
+            color: white;
+            padding: 15px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.384);
+        }
+        th{
+            background-color: rgba(0, 0, 0, 0.788);
+            color: white;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 12px;
+        }
+        .country{
+            text-align: center;
+        }
+        .total{
+            background-color: rgba(0, 0, 0, 0.788);
+            color: white;
+            text-align: center;
+        }
+        .population{
+            font-size: 13px;
+            vertical-align: bottom;
+        }
+        .pais{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>População de cada País do Mundo</caption>
+        <thead>
+            <tr>
+                <th scope="col">População</th>
+                <th scope="col" class="pais">País</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="population">1 429 921 746</td>
+                <td class="country">Índia</td>
+            </tr>
+            <tr>
+                <td class="population">1 426 391 281</td>
+                <td class="country">China</td>
+            </tr>
+            <tr>
+                <td class="population">339 987 103</td>
+                <td class="country">Eua</td>
+            </tr>
+            <tr>
+                <td class="population">277 184 719</td>
+                <td class="country">Indonésia</td>
+            </tr>
+            <tr>
+                <td class="population">240 215 932</td>
+                <td class="country">Paquistão</td>
+            </tr>
+            <tr>
+                <td class="population">223 899 057</td>
+                <td class="country">Nigéria</td>
+            </tr>
+            <tr>
+                <td class="population">203 080 756</td>
+                <td class="country">Brasil</td>
+            </tr>
+            <tr>
+                <td class="population">172 452 382</td>
+                <td class="country">Bangladesh</td>
+            </tr>
+            <tr>
+                <td class="population">146 140 931</td>
+                <td class="country">Rússia</td>
+            </tr>
+            <tr>
+                <td class="population">134 127 189</td>
+                <td class="country">México</td>
+            </tr>
+            <tr>
+                <td class="population">125 092 825</td>
+                <td class="country">Etiópia</td>
+            </tr>
+            <tr>
+                <td class="population">124 127 899</td>
+                <td class="country">Japão</td>
+            </tr>
+            <tr>
+                <td class="population">109 581 078</td>
+                <td class="country">Filipinas</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td class="total"><strong>8 bi</strong></td>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
