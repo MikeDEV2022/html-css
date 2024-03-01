@@ -9,10 +9,11 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            width: 500px;
+            width: 400px;
             margin: auto;
             padding-top: 5%;
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             font-size: 1.3em;
@@ -20,12 +21,21 @@
             background-color: gray;
             color: white;
             padding: 15px;
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
             box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.384);
         }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #333;
+        }
         th{
-            background-color: rgba(0, 0, 0, 0.788);
+            background-color: #333;
             color: white;
         }
         td, th{
@@ -45,7 +55,7 @@
             vertical-align: bottom;
         }
         .pais{
-            width: 50%;
+            width: 30%;
         }
     </style>
 </head>
@@ -102,6 +112,38 @@
             <tr>
                 <td class="population">125 092 825</td>
                 <td class="country">Etiópia</td>
+            </tr>
+            <tr>
+                <td class="population">124 127 899</td>
+                <td class="country">Japão</td>
+            </tr>
+            <tr>
+                <td class="population">109 581 078</td>
+                <td class="country">Filipinas</td>
+            </tr>
+            <tr>
+                <td class="population">124 127 899</td>
+                <td class="country">Japão</td>
+            </tr>
+            <tr>
+                <td class="population">109 581 078</td>
+                <td class="country">Filipinas</td>
+            </tr>
+            <tr>
+                <td class="population">124 127 899</td>
+                <td class="country">Japão</td>
+            </tr>
+            <tr>
+                <td class="population">109 581 078</td>
+                <td class="country">Filipinas</td>
+            </tr>
+            <tr>
+                <td class="population">124 127 899</td>
+                <td class="country">Japão</td>
+            </tr>
+            <tr>
+                <td class="population">109 581 078</td>
+                <td class="country">Filipinas</td>
             </tr>
             <tr>
                 <td class="population">124 127 899</td>
