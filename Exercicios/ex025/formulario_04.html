@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        fieldset{
+            border-radius: 4px;
+            width: 40%;
+            display: block;
+            margin: 0 auto;
+        }
+        legend{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário e-mail e telefone</h1>
+    <form action="forms.php" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>Dados de cadastro</legend>
+            <p>
+                <label for="iemail">E-mail para cadastro</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="Digite seu e-mail">
+            </p>
+            <p>
+                <label for="ifone">Telefone para contato</label>
+                <input type="tel" name="fone" id="ifone" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
+            </p>
+            <p>
+                <label for="icpf">Número de cpf</label>
+                <input type="text" name="cpf" id="icpf" minlength="0" maxlength="14" pattern="^\d{3}.\d{3}.\d{3}-\d{2}$" placeholder="xxx.xxx.xxx-xx">
+            </p>
+            <p>
+                <label for="icartao">Número de cartão</label>
+                <input type="text" name="cartao" id="icartao" required placeholder="xxxx-xxxx-xxxx-xxxx" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$">
+            </p>
+            <p>
+                <label for="idata">Data de validade</label>
+                <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                <label for="icode">Codigo (CVV)</label>
+                <input type="number" name="numero" id="icode" min="1" max="999" step="1">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
