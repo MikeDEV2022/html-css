@@ -51,19 +51,27 @@
             font-weight: bold;
             cursor: pointer;
         }
+        .buttons{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
         
     </style>
 </head>
 <body>
     <h1>Exemplo de Login</h1>
-    <form action="forms.php" method="post">
+    <form action="forms.php" method="POST" autocomplete="on">
         <div class="container-login">
             <label for="name">Nome/Usuario</label>
-            <input type="text" name="nome" id="name" placeholder="digite seu usuario">
+            <input type="text" name="nome" id="name" placeholder="digite seu usuario" required minlength="5" maxlength="30" autocomplete="username">
             <label for="password">Senha</label>
-            <input type="password" name="pass" id="password" placeholder="digite sua senha">
+            <input type="password" name="pass" id="password" placeholder="digite sua senha" required minlength="5" maxlength="30" autocomplete="current-password">
         </div>
-        <input type="submit" value="Login" id="button">
+        <div class="buttons">
+            <input type="submit" value="Login" id="button">
+            <input type="reset" value="Limpar" id="button">
+        </div>
     </form>
 </body>
 </html>
