@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de selects datalist e textarea</h1>
+    <form action="forms.php" method="post">
+        <p>
+            <label for="iestado">Estado:</label>
+            <select name="estado" id="iestado" required>
+                <optgroup label="Estados do nordeste">
+                    <option value="RN">Rio grande do norte</option>
+                    <option value="PB">Paraiba</option>
+                    <option value="PR">Pará</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+                <optgroup label="Estados do sul">
+                    <option value="SC">Santa catarina</option>
+                    <option value="BH">Belo horizonte</option>
+                    <option value="RS">Rio grande so sul</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lista" required>
+            <datalist id="lista">
+                    <option>Administrador</option>
+                    <option>Banqueiro</option>
+                    <option>Vendedor</option>
+                    <option>Programador</option>
+                    <option>Minerador</option> 
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="txt" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <label for="iarquive">Carregue seus arquivos</label>
+            <input type="file" name="files" id="iarquive">
+        </p>
+        <input type="submit" value="Enviar dados">
+    </form>
+</body>
+</html>
