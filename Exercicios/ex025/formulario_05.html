@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e radio</title>
+    <style>
+        .sexos{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            padding: 40px;
+        }
+        .nomes{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            border-radius: 10px;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos simples</h1>
+    <form action="forms.php" method="post">
+        <fieldset class="sexos">
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas" required><label for="imas">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" required><label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset class="nomes">
+            <legend>Escolha um nome</legend>
+            <input type="checkbox" name="marcos" id="imarcos"><label for="imascos">Marcos</label>
+            <input type="checkbox" name="leandro" id="ileandro"><label for="ileandro">Leandro</label>
+            <input type="checkbox" name="james" id="ijames"><label for="ijames">James</label>
+            <input type="checkbox" name="carlos" id="icarlos"><label for="icarlos">Carlos</label>
+            <input type="checkbox" name="andre" id="iandre"><label for="iandre">Andre</label>
+            <input type="checkbox" name="jonas" id="ijonas"><label for="ijonas">Jonas</label>
+            <input type="checkbox" name="mike" id="imike"><label for="imike">Mike</label>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
