@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor da range</title>
+</head>
+<body>
+    <h1>Barra de range</h1>
+    <form action="forms" method="get">
+        <p>
+            <label for="ibar">Barra de carregamento</label>
+            <input type="range" name="ranger" id="ibar" value="0" min="0" max="100" oninput="ibarra.innerHTML = Number(ibar.value)">
+            <span>%</span>
+            <output id="ibarra">0</output>
+        </p>
+    </form>
+</body>
+</html>

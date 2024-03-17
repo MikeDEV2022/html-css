@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Calculos</h1>
+    <form action="forms.php" method="get">
+        <p>
+            <label for="in1">Numero 1:</label>
+            <input type="number" name="numero" id="in1" required oninput="resultado()">
+        </p>
+        <p>
+            <label for="in2">Numero 2:</label>
+            <input type="number" name="numero2" id="in2" required oninput="resultado()">
+        </p>
+        <p>
+            <label for="result">Resultado:</label>
+            <output id="result">0</output>
+        </p>
+    </form>
+    <script>
+        function resultado(){
+            let soma = Number(in1.value) + Number(in2.value)
+            result.innerHTML = soma
+        }
+    </script>
+</body>
+</html>
