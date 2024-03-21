@@ -11,13 +11,12 @@ body{
     background-color: #233EFF;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 97vh;
-    width: 90vw;
-    padding: 10px;
-
+    height: 100vh;
+    width: 100vw;
 }
 body h1{
     text-shadow: 2px 2px 3px #233EFF;
+    padding: 10px;
     color: white;
     text-align: center;
 }
