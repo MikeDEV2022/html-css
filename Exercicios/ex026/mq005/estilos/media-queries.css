@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/*Media queries*/
+:root{
+    --cor-top: #949494;
+    --cor-back: #D3D3D3;
+    --cor-main: #FFFFFF;
+}
+@media screen and (min-width: 768px){
+    main{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    .menu-burguer{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        gap: 5px;
+    }
+    nav a{
+        color: var(--cor-main);
+        background-color: #575757;
+        padding: 10px;
+        text-decoration: none;
+        border-top: 2px solid gray;
+    }
+    nav a:hover{
+        background-color: gray;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .menu-burguer{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        gap: 5px;
+    }
+    nav a{
+        color: var(--cor-main);
+        background-color: #575757;
+        padding: 10px;
+        text-decoration: none;
+        border-top: 2px solid gray;
+    }
+    nav a:hover{
+        background-color: gray;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .menu-burguer{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        gap: 5px;
+    }
+    nav a{
+        color: var(--cor-main);
+        background-color: #575757;
+        padding: 10px;
+        text-decoration: none;
+        border-top: 2px solid gray;
+    }
+    nav a:hover{
+        background-color: gray;
+    }
+}
+@media screen and (min-width: 1200px){
+    .menu-burguer{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        gap: 5px;
+    }
+    nav a{
+        color: var(--cor-main);
+        background-color: #575757;
+        padding: 10px;
+        text-decoration: none;
+        border-top: 2px solid gray;
+    }
+    nav a:hover{
+        background-color: gray;
+    }
+}

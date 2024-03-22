@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsivo</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onresize="mudousecret()">
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+        </nav>
+        <div class="menu-burguer">
+            <i class="fa-solid fa-bars" onclick="showmenusecret()"></i>
+        </div>
+        <menu class="menu-secret" style="display: none;">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum numquam sapiente dolorum repellat voluptate voluptatum, praesentium mollitia doloribus omnis, libero repudiandae accusantium natus facilis deserunt velit ut tempora animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quo beatae quae suscipit voluptates magni ea culpa cumque deserunt consectetur tempore nostrum iusto, dolores corporis. Officia corrupti exercitationem dignissimos excepturi.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque natus omnis perferendis ut voluptas? Illo quisquam voluptates accusantium ab sequi laborum. Nulla, sit! Perspiciatis cumque accusamus deserunt beatae iste accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, minus? Quo voluptatem earum mollitia vitae, eveniet ipsam. Aliquid maxime corrupti accusamus molestiae, doloremque quidem et sit facilis quae animi optio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quasi eius optio quos ea deleniti sit magni. Optio itaque quam molestias similique. Officiis odio laboriosam tenetur quasi corporis voluptate deleniti?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque natus omnis perferendis ut voluptas? Illo quisquam voluptates accusantium ab sequi laborum. Nulla, sit! Perspiciatis cumque accusamus deserunt beatae iste accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, minus? Quo voluptatem earum mollitia vitae, eveniet ipsam. Aliquid maxime corrupti accusamus molestiae, doloremque quidem et sit facilis quae animi optio.</p>
+        </article>
+    </main>
+    <script>
+        function mudousecret(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+        function showmenusecret(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
