@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Module</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container-father{
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+        .son{
+            border-right: 2px solid black;
+            background-color: aqua;
+            flex: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-father">
+        <div class="son">A</div>
+        <div class="son">B</div>
+        <div class="son">C</div>
+        <div class="son">D</div>
+        <div class="son">E</div>
+        <div class="son">F</div>
+        <div class="son">G</div>
+        <div class="son">H</div>
+    </div>
+</body>
+</html>
