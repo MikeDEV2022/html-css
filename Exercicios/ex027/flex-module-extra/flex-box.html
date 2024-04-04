@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Module</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        body{
+            background-color: #333;
+        }
+        main{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            height: 97svh;
+        }
+        .container-father{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 450px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: white;
+            padding: 0px 20px;
+            margin-bottom: 40px;
+        }
+        .son{
+            background-color: aqua;
+            text-align: center;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        #sa{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #sb{
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+        #sc{
+            flex-shrink: 0;
+            flex-grow: 3;
+        }
+        #sa-01{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        #sb-02{
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+        #sc-03{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PROJETOS</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Login</a>
+            <a href="#">Cadastro</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container-father">
+            <div class="son" id="sa">A</div>
+            <div class="son" id="sb">B</div>
+            <div class="son" id="sc">C</div>
+        </div>
+        <div class="container-father">
+            <div class="son" id="sa-01">A</div>
+            <div class="son" id="sb-02">B</div>
+            <div class="son" id="sc-03">C</div>
+        </div>
+    </main>
+</body>
+</html>
