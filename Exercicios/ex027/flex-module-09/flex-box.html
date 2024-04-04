@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Module</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+        .container-father{
+            display: flex;
+            align-items: center;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 10px;
+            width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .son{
+            background-color: aqua;
+            text-align: center;
+            padding: 5px;
+            margin-right: 10px;
+            border-radius: 5px;
+            flex-basis: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-father">
+        <div class="son" id="sa">A</div>
+        <div class="son" id="sb">B</div>
+        <div class="son">C</div>
+        <div class="son">D</div>
+        <div class="son" id="se">E</div>
+        <div class="son">F</div>
+        <div class="son">G</div>
+        <div class="son" id="sh">H</div>
+        
+    </div>
+</body>
+</html>
