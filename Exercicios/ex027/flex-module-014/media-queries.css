@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) and (max-width: 999px){
+    .container-top{
+        display: flex;
+        flex-flow: row wrap-reverse;
+        margin-bottom: 20px;
+    }
+    .image{
+        width: 100%;
+    }
+    .text-element{
+        width: 100%;
+    }
+    .container-down{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .image-down{
+        width: 100%;
+    }
+    .text-down{
+        width: 100%;
+    }
+}
